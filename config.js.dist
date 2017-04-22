@@ -1,0 +1,14 @@
+module.exports = {
+  spotify: {
+    clientId : 'CLIENT_ID',
+    clientSecret : 'CLIENT_SECRET',
+    redirectUri : 'REDIRECT_URI'
+  },
+  assocs: {
+    'BEACON_UUID': { // puck
+      spotify: 'SPOTIFY_DEVICE', // laptop
+      proximity: 100
+    }
+  },
+  default: 'DEFAULT_BEACON_UUID'
+}

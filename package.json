@@ -1,0 +1,25 @@
+{
+  "name": "spotifly",
+  "version": "1.0.0",
+  "description": "YOU CAN FLY NOW",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "noble": "^1.8.1",
+    "spotify-web-api-node": "git://github.com/philnash/spotify-web-api-node.git#add-connect-methods"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sprusr/spotifly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sprusr/spotifly/issues"
+  },
+  "homepage": "https://github.com/sprusr/spotifly#readme"
+}
