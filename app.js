@@ -43,7 +43,14 @@ app.use(function(req, res, next) {
 });
 
 app.get('/', function(req, res) {
-  res.send('home');
+  spotifyApi.getMyDevices().then(function(data) {
+    var response = '<table><thead><th>Name</th><th>Type</th><th>ID</th></thead>';
+    for (var i = 0; i < data.body.devices.length; i++) {
+      response += '<tr><td>' + data.body.devices[i].name + '</td><td>' + data.body.devices[i].type + '</td><td>' + data.body.devices[i].id + '</td>';
+    }
+    response += '</table>';
+    res.send(response);
+  });
 });
 
 // ----
@@ -72,7 +79,11 @@ var calculateNearest = function() {
   var newHigh = null;
 
   for(var uuid in assocs) {
-    console.log(uuid);
+    assocs[uuid].proximity = assocs[uuid].proximity + 0.1;
+  }
+
+  for(var uuid in assocs) {
+    //console.log(uuid);
     if(assocs[uuid].proximity < assocs[current].proximity) {
       newHigh = uuid;
     }
@@ -82,7 +93,7 @@ var calculateNearest = function() {
     current = newHigh;
     spotifyApi.transferMyPlayback({
       deviceIds: [assocs[newHigh].spotify],
-      play: true
+      play: false
     }, function(err) {
       console.log('transferred', err);
     })
