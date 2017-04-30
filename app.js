@@ -11,7 +11,13 @@ var app = express();
 
 var spotifyApi = new SpotifyWebApi(config.spotify);
 var assocs = config.assocs;
-var current = config.default;
+
+for (var i = 0; i < Object.keys(assocs).length; i++) {
+  console.log(assocs[Object.keys(assocs)[i]])
+  assocs[Object.keys(assocs)[i]].proximity = 10;
+}
+
+var current = Object.keys(assocs)[0];
 
 // ----
 // -- Routes

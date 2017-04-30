@@ -5,10 +5,8 @@ module.exports = {
     redirectUri : 'REDIRECT_URI'
   },
   assocs: {
-    'BEACON_UUID': {
-      spotify: 'SPOTIFY_DEVICE',
-      proximity: 100
+    'BEACON_ID': {
+      spotify: 'SPOTIFY_DEVICE_ID'
     }
-  },
-  default: 'DEFAULT_BEACON_UUID'
+  }
 }
