@@ -10,7 +10,7 @@ You're going to need Node.js and npm installed, as well as hardware support for 
 
 First up, clone this repo and do an `npm install`. Then copy `config.js.dist` to `config.js` and change the values to suit you.
 
-```
+```javascript
 spotify: {
   clientId : 'CLIENT_ID',
   clientSecret : 'CLIENT_SECRET',
