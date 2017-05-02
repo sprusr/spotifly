@@ -31,4 +31,8 @@ If all is well, you can run `node app.js` and visit [`localhost:8000`](http://lo
 
 This was made as a quick hack, but definitely has potential to be expanded into a more usable bit of software. If you'd like to add features or fix bugs, please do submit a pull request!
 
-I'm specifically interested in adding support for mobile devices as the controller (walk around with a phone instead of a laptop). This was the original plan with the WebBluetooth API, but browsers don't yet support the features required for this. You could maybe use [Cordova](https://cordova.apache.org/) or similar for this purpose. Happy hacking!
+I'm specifically interested in adding support for mobile devices as the controller (walk around with a phone instead of a laptop). This was the original plan with the WebBluetooth API, but browsers don't yet support the features required for this. You could maybe use [Cordova](https://cordova.apache.org/) or similar for this purpose.
+
+## License
+
+Code licensed under [MIT license](https://choosealicense.com/licenses/mit/), meaning you can do pretty much whatever you want with it! Happy hacking!

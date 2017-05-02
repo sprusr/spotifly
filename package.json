@@ -1,7 +1,7 @@
 {
   "name": "spotifly",
   "version": "1.0.0",
-  "description": "YOU CAN FLY NOW",
+  "description": "Make your music follow you around",
   "main": "app.js",
   "dependencies": {
     "express": "^4.15.2",
@@ -16,8 +16,8 @@
     "type": "git",
     "url": "git+https://github.com/sprusr/spotifly.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Scott Street <scott@spru.sr>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sprusr/spotifly/issues"
   },
